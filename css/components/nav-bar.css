@@ -5,8 +5,40 @@
     bottom: 0;
     width: 100vw;
     box-sizing: border-box;
+    border-top:1px solid #e8e8e8
 }
 .nav__list{
     display: flex;
     justify-content: space-between;
 }
+
+.nav__link{
+    color: #2f363e;
+    position: relative;
+}
+
+.nav__notification,
+.nav__notice{
+    background-color:#FF6229 ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -5px;
+}
+
+.nav__notification{
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* tomoto : FF6229 */
