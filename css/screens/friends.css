@@ -1,0 +1,16 @@
+#frends-display-link{
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    padding: 12px 0;
+}
+
+#frends-display-link i{
+    color: #D5D5D5;
+}
+
+#frends-display-link span{
+    padding: 0px 10px 0px 3px  ;
+    font-size: 15px;
+    color: var(--gray);
+}
