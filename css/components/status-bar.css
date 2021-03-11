@@ -1,11 +1,14 @@
 .status-bar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 7px 7px 0;
+    padding: 7px 7px 0;
+    box-sizing: border-box;
 }
 
 .status-bar__column {
-    width: 33%;
+    width: calc(100% / 3);
 }
 
 .status-bar__column:first-child span {
