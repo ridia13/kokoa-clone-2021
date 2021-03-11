@@ -35,22 +35,33 @@ body {
 #login-form input{
     height: 55px;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 18px;
-    transition: border-bottom .3s ease-in-out;
 }
 
 #login-form input::placeholder{
     color: rgba(0, 0, 0, 0.4);
 }
 
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-bottom .3s ease-in-out;
+}
+
 #login-form input:focus{
     border-color: var(--yellow);
 }
 
-#login-form input:last-of-type{
+#login-form input[type="submit"]{
     margin-top: 30px;
-    border: none;
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 5px;
 }
 
+#login-form a{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
 
