@@ -15,3 +15,24 @@
     font-size: 15px;
     color: var(--gray);
 }
+
+.friends-screen{
+    padding: 0 var(--horizontal-space);
+}
+
+.friends-screen__channel{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.friends-screen__channel-header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-gray);
+    margin-top: 15px;
+}
+
+.friends-screen__channel-header span{
+    font-weight: 500;
+    font-size: 13px;
+}
