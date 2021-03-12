@@ -17,17 +17,12 @@
     position: relative;
 }
 
-.nav__notification,
-.nav__notice{
-    background-color:#FF6229 ;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
+.nav__notification{
     position: absolute;
-    top: -15px;
-    right: -5px;
+    right: -10px;
 }
 
-.nav__notification{
-    right: -10px;
+.nav__notice{
+    top: -15px;
+    right: -5px;
 }

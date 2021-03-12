@@ -1,12 +1,23 @@
-.badge{
+.badge,
+.badge--dot{
+    background-color:#FF6229 ;
     display: flex;
+}
+
+.badge{
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     color: #fff;
     font-size: 13px;
     font-weight: 500;
-    background-color:#FF6229 ;
     width: 20px;
     height: 20px;
+    border-radius: 50%;
+}
+
+.badge--dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
 }

@@ -1,0 +1,26 @@
+.screen-header__icons > span{
+    position: relative;
+}
+
+.badge--dot{
+    top: -7px;
+    right: -5px;
+}
+
+.find-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.find-icons__icon{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.find-icons__icon i{
+    font-size: 25px;
+    margin: 27px 0 25px 0;
+}
