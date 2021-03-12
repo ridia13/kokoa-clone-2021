@@ -17,7 +17,7 @@
 }
 
 .friends-screen__channel{
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: var(--main-border);
 }
 
 .friends-screen__channel-header{
@@ -30,5 +30,5 @@
 
 .friends-screen__channel-header span{
     font-weight: 500;
-    font-size: 13px;
+    font-size: var(--font-sm);
 }

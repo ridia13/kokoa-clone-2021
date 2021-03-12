@@ -3,4 +3,6 @@
     --gray:#2f363e;
     --light-gray:rgba(0, 0, 0, 0.4);
     --horizontal-space:20px;
+    --main-border:1px solid rgba(0, 0, 0, 0.1);
+    --font-sm:13px
 }
