@@ -14,3 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 1000vh;
 }
+
+.main-screen{
+    padding: 0 var(--horizontal-space);
+}
