@@ -20,10 +20,6 @@
 .nav__notification,
 .nav__notice{
     background-color:#FF6229 ;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -33,12 +29,5 @@
 }
 
 .nav__notification{
-    width: 20px;
-    height: 20px;
     right: -10px;
-    font-size: 13px;
-    font-weight: 500;
 }
-
-
-/* tomoto : FF6229 */
