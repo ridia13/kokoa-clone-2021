@@ -18,3 +18,19 @@
 .more-suggestions__item span{
     color: var(--light-gray);
 }
+
+.more-suggestions__icon-image{
+    background-color: var(--yellow);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.more-suggestions__icon-image i{
+    color: #fff;
+}
+
