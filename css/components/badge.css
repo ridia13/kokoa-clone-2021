@@ -1,6 +1,6 @@
 .badge,
 .badge--dot{
-    background-color:#FF6229 ;
+    background-color:var(--tomato) ;
     display: flex;
 }
 

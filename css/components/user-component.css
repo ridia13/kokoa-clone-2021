@@ -45,6 +45,10 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.user-component__subtitle i{
+    color: var(--tomato);
+}
+
 .user-component__column:last-child{
     color: var(--light-gray);
     display: flex;

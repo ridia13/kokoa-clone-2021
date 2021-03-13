@@ -20,15 +20,3 @@
     border-top: var(--main-border);
 }
 
-.friends-screen__channel-header{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    color: var(--light-gray);
-    margin-top: 15px;
-}
-
-.friends-screen__channel-header span{
-    font-weight: 500;
-    font-size: var(--font-sm);
-}

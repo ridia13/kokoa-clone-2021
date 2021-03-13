@@ -1,0 +1,10 @@
+.main-title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-gray);
+    margin-top: 15px;
+    font-size: var(--font-sm);
+    font-weight: 500;
+}
+
