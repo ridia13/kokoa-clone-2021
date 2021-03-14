@@ -1,0 +1,24 @@
+.settings__setting{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid rgba(167, 167, 167, 0.1);
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.settings__setting:last-child{
+    padding-bottom: 40px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+    
+.settings__setting__column i{
+    color: rgba(0, 0, 0, 0.7);
+}
+.setting__title{
+    margin-left: 20px;
+    color: var(--gray);
+}
+
+.setting__status{
+    color: var(--light-gray);
+}
