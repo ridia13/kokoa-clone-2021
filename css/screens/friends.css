@@ -1,4 +1,4 @@
-#frends-display-link{
+#frends-display-link {
     display: block;
     text-align: center;
     background-color: #FAFAFA;
@@ -6,17 +6,45 @@
     margin-bottom: 10px;
 }
 
-#frends-display-link i{
+#frends-display-link i {
     color: #D5D5D5;
 }
 
-#frends-display-link span{
-    padding: 0px 10px 0px 3px  ;
+#frends-display-link span {
+    padding: 0px 10px 0px 3px;
     font-size: 15px;
     color: var(--gray);
 }
 
-.friends-screen__channel{
+.friends-screen__channel {
     border-top: var(--main-border);
 }
 
+/* splash-screen */
+@keyframes splash {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    width: 100vw;
+    height: 100vh;
+    font-size: 120px;
+    animation: splash 1.2s ease-in-out 1;
+    opacity: 0;
+    visibility: hidden;
+}
