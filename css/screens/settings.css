@@ -1,3 +1,7 @@
+.main-chat{
+    margin-top: 95px;
+}
+
 .settings__setting{
     display: flex;
     justify-content: space-between;
