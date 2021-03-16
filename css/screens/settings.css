@@ -1,5 +1,9 @@
-.main-chat{
+.settings-screen{
     margin-top: 95px;
+}
+
+.setting-header{
+    background-color: #fff;
 }
 
 .settings__setting{

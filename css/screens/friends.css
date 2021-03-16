@@ -33,6 +33,7 @@
 }
 
 #splash-screen {
+    z-index: 3;
     position: absolute;
     top: 0;
     display: flex;
