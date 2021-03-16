@@ -1,26 +1,41 @@
-#chat-screen{
-    background-color:#ABC1D1 ;
-    height: 1000vh;
+#chat-screen {
+    background-color: #ABC1D1;
+    height: 500vh;
 }
 
 .chat-status,
 .chat-header {
-    background-color:#ABC1D1 ;
+    background-color: #ABC1D1;
 }
-.chat-status{
+
+.chat-status {
     z-index: 2;
 }
 
-.chat-header{
+.chat-header {
     z-index: 1;
 }
-.main-chat{
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.main-chat {
     margin-top: 95px;
     display: flex;
     flex-direction: column;
+    animation: fadeIn .4s linear;
 }
 
-.chat-timestamp{
+.chat-timestamp {
     display: inline;
     padding: 10px 15px;
     margin: auto;
@@ -30,43 +45,70 @@
     font-size: var(--font-sm);
 }
 
-.message-row{
-    display: flex;
-    margin: 15px 0;
+@keyframes messageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
-.message-row img{
+.message-row {
+    display: flex;
+    margin: 15px 0;
+    animation: messageFadeIn .6s ease-out .4s ;
+}
+
+.message-row img {
     width: 40px;
     height: 40px;
     border-radius: 15px;
     margin-right: 10px;
 }
 
-.message__author{
+.message__author {
     color: var(--light-gray);
     font-size: var(--font-sm);
     font-weight: 500;
     margin-bottom: 8px;
 }
 
-.message-row__content{
+.message-row__content {
     display: flex;
     flex-direction: column;
 }
 
-.message__info{
+.message__info {
     display: flex;
     align-items: flex-end;
 }
-.message-row--own .message__info{
+
+.message-row--own .message__info {
     flex-direction: row-reverse;
 }
 
-.message-row--own{
-    flex-direction: row-reverse;
+@keyframes messageOwnFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
-.message__bubble{
+.message-row--own {
+    flex-direction: row-reverse;
+    animation: messageOwnFadeIn .6s ease-out .4s forwards;
+}
+
+.message__bubble {
     display: block;
     background-color: #fff;
     padding: 10px;
@@ -74,12 +116,13 @@
     border-top-left-radius: 0;
 }
 
-.message-row--own .message__bubble{
+.message-row--own .message__bubble {
     border-top-left-radius: 15px;
     border-top-right-radius: 0;
     background-color: var(--yellow);
 }
-.message__time{
+
+.message__time {
     font-size: 11px;
     font-weight: 500;
     color: var(--light-gray);
@@ -87,7 +130,8 @@
 }
 
 /* form */
-.reply{
+
+.reply {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -97,20 +141,35 @@
     background-color: #fff;
     padding: 5px 15px;
     box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+.reply:focus-within{
+    transform: translateY(60px);
 }
 
-.reply__column:first-child{
+.reply:focus-within .reply__column>i,
+.reply:focus-within button {
+    opacity: 0;
+}
+
+.reply:focus-within input {
+    width: 95vw;
+    transform: translateX(-12%) translateY(-60px);
+}
+
+.reply__column:first-child {
     width: 10%;
 }
 
-.reply__column:last-child{
+.reply__column:last-child {
     width: 90%;
 }
 
-.reply__column i{
+.reply__column i {
     color: var(--light-gray);
 }
-.reply__column input{
+
+.reply__column input {
     width: 100%;
     position: relative;
     padding: 15px;
@@ -118,22 +177,23 @@
     border: var(--main-border);
     border-radius: 30px;
     font-size: 16px;
-    background-color:#F8F8F8 ;
+    background-color: #F8F8F8;
+    transition: all .3s ease-in-out;
 }
 
-.reply__column:last-child > i,
-.reply__column:last-child button{
+.reply__column:last-child>i,
+.reply__column:last-child button {
     position: absolute;
     top: 11px;
     right: 20px;
 }
 
-.reply__column:last-child > i{
+.reply__column:last-child>i {
     top: 22px;
     right: 70px;
 }
 
-.reply__column button{
+.reply__column button {
     width: 35px;
     height: 35px;
     background-color: var(--yellow);
@@ -142,10 +202,10 @@
 }
 
 .reply__column button:focus,
-.reply__column button:active{
+.reply__column button:active {
     outline: none;
 }
 
-.reply__column:last-child button i{
+.reply__column:last-child button i {
     color: #000;
 }
