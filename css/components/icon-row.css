@@ -17,6 +17,11 @@
 .icon-row__icon i{
     font-size: 25px;
     margin: 15px 0;
+    transition: all .3s;
+}
+
+.icon-row__icon:hover i{
+    transform: rotate(15deg);
 }
 
 .icon-row__icon span{

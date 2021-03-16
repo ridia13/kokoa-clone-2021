@@ -44,6 +44,60 @@
     border-radius: 20px;
     font-size: var(--font-sm);
 }
+@keyframes messageAnimation{
+    0%{
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.message-row {
+    display: flex;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: messageAnimation .3s linear .5s forwards;
+}
+
+.message-row--own {
+    flex-direction: row-reverse;
+    transform: translateX(100px);
+}
+
+.message-row:nth-of-type(2n+1) {
+    animation-delay: 1s;
+}
+
+
+.message-row img {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.message__author {
+    color: var(--light-gray);
+    font-size: var(--font-sm);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.message-row__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
 
 @keyframes jello-vertical {
     0% {
@@ -82,62 +136,13 @@
     }
 }
 
-.message-row {
-    display: flex;
-    margin: 15px 0;
-}
-
-.message-row img {
-    width: 40px;
-    height: 40px;
-    border-radius: 15px;
-    margin-right: 10px;
-}
-
-.message__author {
-    color: var(--light-gray);
-    font-size: var(--font-sm);
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.message-row__content {
-    display: flex;
-    flex-direction: column;
-}
-
-.message__info {
-    display: flex;
-    align-items: flex-end;
-}
-
-.message-row--own .message__info {
-    flex-direction: row-reverse;
-}
-
-@keyframes messageOwnFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(80px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.message-row--own {
-    flex-direction: row-reverse;
-}
-
 .message__bubble {
     display: block;
     background-color: #fff;
     padding: 10px;
     border-radius: 15px;
     border-top-left-radius: 0;
-    animation: jello-vertical .7s ease-out .4s ;
+    animation: jello-vertical .7s ease-out 2s ;
 }
 
 .message-row--own .message__bubble {

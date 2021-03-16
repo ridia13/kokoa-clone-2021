@@ -15,6 +15,14 @@
     margin-left: 25px;
 }
 
+.screen-header__icons i{
+    transition: all .3s;
+}
+.screen-header__icons i:hover{
+    transform: scale(1.2);
+}
+
+
 @keyframes rotateCog{
     from{
         transform: none;
