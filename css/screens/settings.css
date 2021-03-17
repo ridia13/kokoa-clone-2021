@@ -10,8 +10,14 @@
     display: flex;
     justify-content: space-between;
     border-bottom:1px solid rgba(167, 167, 167, 0.1);
-    padding: 20px 0;
+    padding: 20px 10px;
     font-size: 18px;
+    transition: all .3s;
+}
+
+.settings__setting:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .settings__setting:last-child{

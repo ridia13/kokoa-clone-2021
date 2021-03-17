@@ -28,8 +28,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 10px;
     border-bottom: var(--main-border);
+    transition: all .3s;
+}
+
+.open-post:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .open-post__column{
