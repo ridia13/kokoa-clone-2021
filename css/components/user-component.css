@@ -12,7 +12,7 @@
 }
 
 .user-component:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--main-color--light);
     border-radius: 10px;
 }
 

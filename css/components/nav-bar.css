@@ -1,5 +1,5 @@
 .nav{
-    background-color: #f9f9fa;
+    background-color: var(--main-color);
     padding: 20px 55px;
     position: fixed;
     bottom: 0;

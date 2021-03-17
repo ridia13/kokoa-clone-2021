@@ -148,7 +148,7 @@
 .message-row--own .message__bubble {
     border-top-left-radius: 15px;
     border-top-right-radius: 0;
-    background-color: var(--yellow);
+    background-color: var(--main-color);
 }
 
 .message__status{
@@ -166,7 +166,7 @@
 }
 
 .message__notRead{
-    color: var(--yellow);
+    color: var(--main-color);
     margin-bottom: 5px;
 }
 /* form */
@@ -237,7 +237,7 @@
 .reply__column button {
     width: 35px;
     height: 35px;
-    background-color: var(--yellow);
+    background-color: var(--main-color);
     border: none;
     border-radius: 50%;
 }

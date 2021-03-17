@@ -36,7 +36,7 @@
 }
 
 .login-form__input:focus{
-    border-color: var(--yellow);
+    border-color: var(--main-color);
 }
 
 .login-form__input::placeholder{
@@ -45,7 +45,7 @@
 
 .login-form__btn{
     margin-top: 30px;
-    background-color: var(--yellow);
+    background-color: var(--main-color);
     cursor: pointer;
     border-radius: 5px;
 }

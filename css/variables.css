@@ -1,8 +1,9 @@
 :root{
-    --yellow:#fff463;
-    --tomato:#FF6229;
+    --main-color:#fff463;
+    --main-color--light:#fff56379;
+    --tomato:#eb1c23ec;
     --gray:#2f363e;
-    --light-gray:#b26e2d;
+    --light-gray:#2f363e85;
     --horizontal-space:20px;
     --main-border:1px solid rgba(0, 0, 0, 0.1);
     --font-sm:13px

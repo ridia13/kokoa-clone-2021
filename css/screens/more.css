@@ -20,7 +20,7 @@
 }
 
 .more-suggestions__icon-image{
-    background-color: var(--yellow);
+    background-color: var(--main-color);
     width: 40px;
     height: 40px;
     border-radius: 5px;
